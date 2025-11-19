@@ -1,0 +1,14 @@
+//connects frontend with backend and forms a .exe executable file.
+//By Piyush Gairola
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Airline GUI",
+      "type": "shell",
+      "command": "gcc frontend.c backend.c -I./include -L./lib -lraylib -lopengl32 -lgdi32 -lwinmm -o airline.exe",
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": []
+    }
+  ]
+}
